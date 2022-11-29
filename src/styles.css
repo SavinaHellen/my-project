@@ -1,0 +1,129 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0 auto;
+  padding: 5%;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(255, 189, 189) 0%,
+    rgb(255, 216, 168) 62%,
+    rgb(255, 248, 168) 100.7%
+  );
+  max-width: 1000px;
+}
+
+.container {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(222, 168, 248) 0%,
+    rgb(168, 222, 248) 21.8%,
+    rgb(189, 250, 205) 35.6%,
+    rgb(243, 250, 189) 52.9%,
+    rgb(250, 227, 189) 66.8%,
+    rgb(248, 172, 172) 90%,
+    rgb(254, 211, 252) 99.7%
+  );
+  border: 1px solid #075a73;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  color: #0a6f63;
+  font-size: 34px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: inline;
+  margin: 13px 10px 20px 20px;
+}
+
+.date {
+  color: #01213c;
+  font-size: 20px;
+  margin: 13px 10px 20px 20px;
+}
+
+.temperature {
+  font-size: 30px;
+  color: #021627;
+}
+
+.units {
+  color: #021627;
+  font-size: 20px;
+  position: relative;
+  top: -13px;
+}
+
+.cities {
+  position: relative;
+  margin: 20px 10px 10px 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0a6f63;
+}
+
+.header {
+  display: inline;
+}
+
+.current-city {
+  padding: 10px 10px 20px 1000px;
+}
+
+.night-temperature {
+  opacity: 70%;
+}
+
+.header {
+  margin: 30px 20px 30px 20px;
+}
+.description {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #01213c;
+}
+
+#temp {
+  justify-content: start;
+  font-size: 35px;
+  color: #021627;
+  font-weight: bold;
+}
+
+.col-6 {
+  text-align: center;
+}
+
+#weather-desc {
+  margin-left: 30px;
+}
+.today {
+  font-size: 20px;
+  color: #06487ee7;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.week {
+  text-align: center;
+  background-color: aquamarine;
+  border: 1px solid #0a6f63;
+  border-radius: 60px;
+  padding: 0px 4px 13px 6px;
+  color: #021627;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.wether-for-week {
+  text-align: center;
+  justify-content: center;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #075a73;
+  margin-bottom: 20px;
+}
+
+.emojis {
+  font-size: 40px;
+  margin-top: -25px;
+}
