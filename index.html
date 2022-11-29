@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Forecast HTML&CSS</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-start cities">
+        <div class="col-2">Mexico City</div>
+        <div class="col-2">Montreal</div>
+        <div class="col-2">Kyiv</div>
+        <div class="col-2">Halifax</div>
+      </div>
+
+      <form id="search-form">
+        <div class="row">
+          <div class="col-2">
+            <button
+              class="btn btn-success shadow-sm w-100"
+              type="button"
+              id="current-location-button"
+            >
+              Current
+            </button>
+          </div>
+          <div class="col-2">
+            <input
+              type="submit"
+              class="form-control btn btn-primary shadow-sm w-100"
+              value="Search"
+            />
+          </div>
+          <div class="col-8">
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Enter your city"
+                class="form-control"
+                autofocus
+                aria-label="city name"
+                aria-describedby="basic-addon2"
+                id="input-city-name"
+              />
+            </div>
+          </div>
+          <!-- <div class="col-2 city">
+            <div class="emojis">☁</div>
+            18°C /
+            <span class="night-temperature"> 10°C </span>
+          </div> -->
+        </div>
+      </form>
+      <div class="header">
+        <small> Current city </small>
+        <br />
+        <h1 id="city-name"></h1>
+      </div>
+      <h2 class="date" id="currently">current date</h2>
+      <h3 id="currently"></h3>
+      <div class="description" id="weather-desc"></div>
+      <div class="row weather-today">
+        <div class="col-6">
+          <div class="float-left">
+            <span id="temp"></span>
+            <span class="units">°C</span>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="precipitation">
+            <div class="description">
+              Humidity: <span id="humidity"></span>%
+            </div>
+            <div class="description">
+              Wind speed: <span id="wind-speed"></span> km/h
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row wether-for-week">
+        <div class="col-2">
+          Sunday
+          <div class="week">
+            <br />
+            <div class="emojis">☀</div>
+            <div>
+              26°C /
+              <span class="night-temperature"> 10°C </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          Monday
+          <div class="week">
+            <br />
+            <div class="emojis">🌦</div>
+            <div>
+              26°C /
+              <span class="night-temperature"> 10°C </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          Tuesday
+          <div class="week">
+            <br />
+            <div class="emojis">🌧</div>
+            <div>
+              24°C /
+              <span class="night-temperature"> 8°C </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          Wednesday
+          <div class="week">
+            <br />
+            <div class="emojis">⛈</div>
+            <div>
+              24°C /
+              <span class="night-temperature"> 8°C </span>
+            </div>
+          </div>
+        </div>
+        <div class="col-2">
+          Thursday
+          <div class="week">
+            <br />
+            <div class="emojis">⛅</div>
+            <div>
+              26°C /
+              <span class="night-temperature"> 9°C </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
